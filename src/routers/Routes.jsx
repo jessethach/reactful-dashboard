@@ -5,6 +5,7 @@ import BaseLayout from "../components/layouts/Base";
 import DashboardLayout from "../components/layouts/Dashboard";
 
 import DashboardHomePage from "../components/pages/dashboard/Home";
+import DashboardClasses from "../components/pages/dashboard/Classes";
 import DashboardTablesPage from "../components/pages/dashboard/Tables";
 import DashboardFormsPage from "../components/pages/dashboard/Forms";
 import DashboardPanelsWellsPage from "../components/pages/dashboard/PanelsWells";
@@ -30,6 +31,7 @@ var Routes = React.createClass({
               <Route name="dashboard.flot-charts" path="/flot-charts" handler={DashboardFlotChartsPage} />
               <Route name="dashboard.morrisjs-charts" path="/morrisjs-charts" handler={DashboardMorrisjsChartsPage} />
               <Route name="dashboard.tables" path="/tables" handler={DashboardTablesPage} />
+              <Route name="dashboard.classes" path="/classes" handler={DashboardClasses} />
               <Route name="dashboard.forms" path="/forms" handler={DashboardFormsPage} />
               <Route name="dashboard.panels-wells" path="/panels-wells" handler={DashboardPanelsWellsPage} />
               <Route name="dashboard.buttons" path="/buttons" handler={DashboardButtonsPage} />
@@ -49,9 +51,9 @@ var Routes = React.createClass({
     }
   },
   render: function() {
-  
+
   }
-  
+
 });
 
 export default Routes;

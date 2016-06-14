@@ -4,7 +4,175 @@
 @import "~nprogress/nprogress.css";
 @import "./sb-admin-2.less";
 
+#wrapper {
+	background-color: #FBFCFD;
+}
+
+// main nav module
+strong {
+	color: black;
+}
+
+.navbar-main {
+	padding-left: 20px;
+}
+
+.navbar-content {
+	padding: 15px 0 15px 0;
+}
+
+.navbar-inner li a {
+	padding-right: 0;
+	padding-left: 0;
+	margin: 0 15px 0 15px;
+	color: #3A405B;
+}
+
+.navbar-inner li a:hover {
+	text-decoration: none;
+}
+
+.navbar-inner li a:focus {
+	outline: none;
+	border-bottom: 1px solid #508DB4;
+	color: #619FC1;
+	text-decoration: none;
+}
+
 .navbar-brand img {
 	display: inline-block;
 	height: 26px;
+}
+
+.navbar-default {
+	background-color: #FBFCFD;
+}
+
+.page-header {
+	border-bottom: 0px;
+}
+
+.navbar-content {
+  border-top: 1px solid #E7EAF1;
+	border-bottom: 1px solid #E7EAF1;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent;
+}
+
+
+
+// form module
+input[type="text"] {
+	border: 0px;
+	border-bottom: 1px solid #979797;
+}
+
+label {
+	color: #ABAFC3;
+	font-weight: lighter !important;
+}
+
+// inner panel module
+.panel {
+	border: 0px;
+}
+
+.panel-default > .panel-heading {
+	background-color: #fff;
+}
+
+.panel-title {
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+// sidebar module
+.sidebar .sidebar-nav.navbar-collapse {
+	padding: 2rem 0 0 2rem;
+}
+
+.sidebar ul li {
+	border-bottom: 0;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+.sidebar ul li a {
+	color: #3A405B;
+}
+
+.sidebar ul li a.active {
+	background-color: #FBFCFD;
+	color: #508DB4;
+}
+
+.button-container {
+	padding: 30px 0 10px 0;
+	height: 100%;
+	display: flex;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.create-button-container {
+	height: 100%;
+	display: flex;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #D8DCE3;
+}
+
+.create-button {
+	border: 0;
+	background-color: transparent;
+	vertical-align: middle;
+	height: 80px;
+	color: #508DB4;
+	font-size: 20px;
+}
+
+.cancel-button {
+	border: 1px solid #BDBAB7;
+	border-radius: 4px;
+	color: #7A7977;
+	background-color: #FFFFFF;
+	vertical-align: middle;
+	height: 45px;
+	width: 150px;
+	font-weight: lighter;
+	margin: 1rem;
+}
+
+.submit-button {
+	border: 1px solid #78AF3B;
+	background: #78AF3B;
+	border-radius: 4px;
+	color: #FFFFFF;
+	vertical-align: middle;
+	height: 45px;
+	width: 150px;
+	font-weight: lighter;
+	margin: 1rem;
+}
+
+// wide screens
+@media (min-width: 768px) {
+	#page-wrapper {
+		padding: 2rem 0 4rem 2rem;
+	}
+	.sidebar {
+		margin-top: 50px;
+	}
+
+	.navbar-header {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.navbar-main {
+		padding-left: 8rem;
+	}
 }
