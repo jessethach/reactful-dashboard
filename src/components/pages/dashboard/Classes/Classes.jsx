@@ -70,38 +70,38 @@ var ClassCategory = React.createClass({
                   <div>
                     <form>
                       <div className="row">
-                        <div className="col-md-7">
+                        <div className="col-md-6 input-area">
                           <label>
                             Location name
                             <br />
-                            <input value="Seattle, 4th & Pike" className="input-content" type="text" placeholder="Enter Location" />
+                            <input value="Seattle, 4th & Pike" type="text" placeholder="Enter Location" />
                           </label>
                         </div>
                         <div>
+                        <div className="col-md-3 input-area">
                           <label>
                             <br />
-                            <div className="col-md-4">
                               <input type="text" placeholder="Contact Email" />
-                            </div>
                           </label>
+                        </div>
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-md-4">
+                        <div className="col-md-3 input-area">
                           <label>
                             Address
                             <br />
                             <input type="text" placeholder="Enter Address" />
                           </label>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-3 input-area">
                           <label>
                             Address 2
                             <br />
                             <input type="text" placeholder="Enter Address 2" />
                           </label>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-3 input-area">
                           <label>
                             <br />
                             <input type="text" placeholder="Reply to Email" />
@@ -109,18 +109,20 @@ var ClassCategory = React.createClass({
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-md-4">
+                        <div className="col-md-3 input-area">
                           <label>
                             <br />
                               <input type="text" value="Seattle" placeholder="City" />
                           </label>
                         </div>
-                        <div className="col-md-2">
-                          <label>
+                        <div className="col-md-1 input-area">
+                          <label className="inner-label">
                             State
                             <br />
-                            <select style={ {margin: 0} } name="select-state">
-                              <option value="wa" selected>WA</option>
+                            <select className="form-control inner-select" name="select-state">
+                              <option value="wa" selected>
+                                WA
+                              </option>
                               <option value="section1">Section 1</option>
                               <option value="section2">Section 2</option>
                               <option value="section3">Section 3</option>
@@ -129,13 +131,13 @@ var ClassCategory = React.createClass({
                             </select>
                           </label>
                         </div>
-                        <div className="col-md-2">
+                        <div className="col-md-1 input-area">
                           <label>
                             <br />
                             <input type="text" placeholder="Zip" />
                           </label>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 input-area">
                           <label>
                             <br />
                             <input type="text" placeholder="Phone" />

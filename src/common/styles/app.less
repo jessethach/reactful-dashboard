@@ -30,6 +30,7 @@ strong {
 
 .navbar-inner li a:hover {
 	text-decoration: none;
+	color: #337ab7;
 }
 
 .navbar-inner li a:focus {
@@ -66,17 +67,66 @@ strong {
 // form module
 input[type="text"] {
 	border: 0px;
-	border-bottom: 1px solid #979797;
+	border-bottom: 0px;
+	font-size: 18px;
+	position: relative;
+	top: 20px;
+}
+
+input[value] {
+	color: #3D2C2F;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 label {
 	color: #ABAFC3;
 	font-weight: lighter !important;
+	font-size: 15px;
+	padding: 15px 0px 15px 0px;
+}
+
+.input-area {
+	border-bottom: 1px solid #979797;
+	margin: 5px 15px 5px 0px;
+	padding: 0px;
+}
+
+.inner-label {
+	margin-bottom: 10px;
+	padding-bottom: 0px;
+}
+
+.inner-select {
+	border: 0px;
+	position: relative;
+	top: 10px;
+	overflow: hidden;
+}
+
+.form-control:focus {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	box-shadow: none;
 }
 
 // inner panel module
 .panel {
 	border: 0px;
+}
+
+.panel .panel-default {
+	color: #619FC1;
+}
+
+.panel-title > a:focus {
+	color: #619FC1;
+	text-decoration: none;
+}
+
+.panel-title > a:hover {
+	color: #337ab7;
+	text-decoration: none;
 }
 
 .panel-default > .panel-heading {
